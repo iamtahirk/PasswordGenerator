@@ -1,6 +1,6 @@
-## Random Password Generator
+# Random Password Generator
 
-Solo Project with stretch golas, suggested by [Per Harald Borgen](https://twitter.com/perborgen) CEO of [Scrimba](https://scrimba.com/).
+Solo Project with stretch goals, suggested by [Per Harald Borgen](https://twitter.com/perborgen) CEO of [Scrimba](https://scrimba.com/).
 
 
 ## Screenshot
@@ -12,11 +12,11 @@ Solo Project with stretch golas, suggested by [Per Harald Borgen](https://twitte
 
 - One Click Copy to Clipboard
 - Password Length Selection
-- UpperCase/LowerCase Characters
+- Uppercase/Lowercase Characters
 - Numbers
 - Symbols
 
 
 ## Acknowledgements
 
- - [Scrimba's The Frontend Developer Career Path](https://scrimba.com/learn/frontend)
+- [Scrimba's The Frontend Developer Career Path](https://scrimba.com/learn/frontend)
