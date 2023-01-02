@@ -25,7 +25,7 @@ generatePwdBtn.addEventListener('click', (e)=> {
     }
 
     // console.table(stringPWD, stringPWD[0].length, stringPWD[1].length, stringPWD[2].length, stringPWD[3].length);
-    console.log(stringPWD[0].length, stringPWD[1].length, stringPWD[2].length, stringPWD[3].length);
+    // console.log(stringPWD[0].length, stringPWD[1].length, stringPWD[2].length, stringPWD[3].length);
 
     passOneDisp.innerText = stringPWD[0];
     passTwoDisp.innerText = stringPWD[1];
@@ -57,25 +57,25 @@ function generatePassword(length) {
   let password = "";
 
   if (lowerCaseCheck.checked) {
-  characterTypes.push("abcdefghijklmnopqrstuvwxyz");
+    characterTypes.push("abcdefghijklmnopqrstuvwxyz");
   }
   if (upperCaseCheck.checked) {
-  characterTypes.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    characterTypes.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
   }
   if (numberCheck.checked) {
-  characterTypes.push("0123456789");
+    characterTypes.push("0123456789");
   }
   if (symbolsCheck.checked) {
-  characterTypes.push("!@#$%^&*()-_+={}[]|:;<>,.?/~`");
+    characterTypes.push("!@#$%^&*()-_+={}[]|:;<>,.?/~`");
   }
 
   for (let i = 0; i < length; i++) {
-  // choose a random character type from the characterTypes array
-  let randomCharType = characterTypes[Math.floor(Math.random() * characterTypes.length)];
-  // choose a random character from the chosen character type
-  let randomChar = randomCharType[Math.floor(Math.random() * randomCharType.length)];
-  // add the random character to the password
-  password += randomChar;
+    // choose a random character type from the characterTypes array
+    let randomCharType = characterTypes[Math.floor(Math.random() * characterTypes.length)];
+    // choose a random character from the chosen character type
+    let randomChar = randomCharType[Math.floor(Math.random() * randomCharType.length)];
+    // add the random character to the password
+    password += randomChar;
   }
   return password;
 }
@@ -102,7 +102,7 @@ const copyClipBoard = (pass) => {
 
 pwdDisplay.addEventListener('click', (e) => {
   e.preventDefault();
-  console.log(e.target.getAttribute("class"));
+  // console.log(e.target.getAttribute("class"));
 
   /*
   If condition is to avoid event delegation and not triggering the copied 
@@ -128,5 +128,4 @@ pwdDisplay.addEventListener('click', (e) => {
         }, 500);
     }
   }
-	
 })
